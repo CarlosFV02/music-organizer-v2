@@ -87,8 +87,11 @@ public class MusicOrganizer
      * Imprime todos los files
      */
     public void listAllFiles(){
+        int position = 1;
+        
         for (String filename : files){
-            System.out.println(filename);
+            System.out.println(position + ". " + filename);
+            position = position + 1;
         }
     }
 }
